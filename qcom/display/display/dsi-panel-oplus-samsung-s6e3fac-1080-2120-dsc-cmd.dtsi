@@ -95,7 +95,7 @@
 					//39 01 00 00 00 00 02 BF 02
 					//39 01 00 00 00 00 03 F0 A5 A5
 					/* Display On */
-					//05 01 00 00 14 00 01 29
+					05 00 00 00 14 00 01 29
 				];
 				qcom,mdss-dsi-timing-switch-command = [
 					/* 120hz Transition */
@@ -136,6 +136,11 @@
 				];
 				qcom,mdss-dsi-nolp-command = [
 					05 00 00 00 09 00 01 28
+					/* AOD Black Frame ctr */
+					39 00 00 40 00 00 03 F0 5A 5A
+					15 00 00 40 00 00 02 BB 30
+					15 00 00 40 00 00 02 F7 0F
+					39 00 00 00 00 00 03 F0 A5 A5
 					/* AOD Mode OFF Setting */
 					39 00 00 40 00 00 03 F0 5A 5A
 					39 00 00 40 00 00 04 B0 00 6B 98
@@ -279,7 +284,7 @@
 					//39 01 00 00 00 00 02 BF 02
 					//39 01 00 00 00 00 03 F0 A5 A5
 					/* Display On */
-					//05 01 00 00 14 00 01 29
+					05 00 00 00 14 00 01 29
 				];
 				qcom,mdss-dsi-timing-switch-command = [
 					/* 90hz Transition */
@@ -320,6 +325,11 @@
 				];
 				qcom,mdss-dsi-nolp-command = [
 					05 00 00 00 0C 00 01 28
+					/* AOD Black Frame ctr */
+					39 00 00 40 00 00 03 F0 5A 5A
+					15 00 00 40 00 00 02 BB 30
+					15 00 00 40 00 00 02 F7 0F
+					39 00 00 00 00 00 03 F0 A5 A5
 					/* AOD Mode OFF Setting */
 					39 00 00 40 00 00 03 F0 5A 5A
 					39 00 00 40 00 00 04 B0 00 6B 98
@@ -463,7 +473,7 @@
 					//39 01 00 00 00 00 02 BF 02
 					//39 01 00 00 00 00 03 F0 A5 A5
 					/* Display On */
-					//05 01 00 00 14 00 01 29
+					05 00 00 00 14 00 01 29
 				];
 				qcom,mdss-dsi-timing-switch-command = [
 					/* 60hz Transition */
@@ -504,6 +514,11 @@
 				];
 				qcom,mdss-dsi-nolp-command = [
 					05 00 00 00 11 00 01 28
+					/* AOD Black Frame ctr */
+					39 00 00 40 00 00 03 F0 5A 5A
+					15 00 00 40 00 00 02 BB 30
+					15 00 00 40 00 00 02 F7 0F
+					39 00 00 00 00 00 03 F0 A5 A5
 					/* AOD Mode OFF Setting */
 					39 00 00 40 00 00 03 F0 5A 5A
 					39 00 00 40 00 00 04 B0 00 6B 98
@@ -636,7 +651,7 @@
 
 	/* ofp config */
 	oplus,ofp-fp-type = <0x02>;
-
+	oplus,ofp-longrui-aod-config = <0x06>;
 	/*esd config*/
 	qcom,esd-check-enabled;
 	qcom,mdss-dsi-panel-status-check-mode = "reg_read";
