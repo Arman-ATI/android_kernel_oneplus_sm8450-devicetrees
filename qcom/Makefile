@@ -296,7 +296,13 @@ dtb-y += $(cape-dtb-y)
 WAIPIO_BASE_DTB += waipio.dtb waipiop.dtb waipio-v2.dtb waipiop-v2.dtb
 WAIPIO_BOARDS += \
 	waipio-mtp-pm8010-overlay.dtbo \
-	ferrari-21631-waipio-overlay.dtbo
+	ferrari-21631-waipio-overlay.dtbo \
+	wly-20846-waipio-overlay.dtbo \
+	wly-20846-waipio-overlay-EVB.dtbo \
+	wly-20846-waipio-overlay-preT0.dtbo \
+	wly-2084A-waipio-overlay.dtbo \
+	wly-2084A-waipio-overlay-EVB.dtbo \
+	wly-2084A-waipio-overlay-preT0.dtbo
 
 waipio-dtb-$(CONFIG_ARCH_WAIPIO) += \
 	$(call add-overlays, $(WAIPIO_BOARDS),$(WAIPIO_BASE_DTB))
