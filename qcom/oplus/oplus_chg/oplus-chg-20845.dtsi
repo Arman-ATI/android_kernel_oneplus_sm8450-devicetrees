@@ -243,6 +243,7 @@
 	qcom,vooc_show_ui_soc_decimal;
 	qcom,ui_soc_decimal_speedmin = <20>;//2A
 	qcom,otg_scheme = <0>;//0:cid 1:ccdetect_gpio 2:switch
+	qcom,otg_boost_src = <1>;//0:plat_pmic 1:external
 	//qcom,soft_aicl_in_adsp_support;
 
 	qcom,dischg-gpio = <&pm8350c_gpios 9 0x00>;
